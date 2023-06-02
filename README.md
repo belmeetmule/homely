@@ -27,7 +27,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 Hello React Frontend <a name="about-the-project"></a>
-![](src/images/project-mock.png)<br>
+![](./src/images/project-mock.png)<br>
 **Homely-frontend** is an implemention of a connection between Ruby on Rails back-end and React front-end. [Homely-backend](https://github.com/belmeetmule/homely-backend) handles the backend API, and [Hello React Frontend](https://github.com/Wahaj-Ali/homely-frontend) handles the frontend UI to display a random greeting message.
 
 ## Kanban Board 
