@@ -1,0 +1,72 @@
+@import './../scss/config';
+
+.reservation_sec {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  justify-content: flex-start;
+  align-items: center;
+
+  .title {
+    color: $text-color;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+  }
+
+  hr {
+    width: 50%;
+  }
+
+  p {
+    color: $text-color;
+  }
+
+  .confirm-input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+  }
+
+  .book-btn {
+    position: inherit;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 180px;
+    background-color: $text-color;
+    color: $secondary-color;
+    font-weight: 700;
+  }
+
+  .react-datepicker-wrapper {
+    div {
+      input {
+        width: 200px;
+        height: 30px;
+        border: 2px solid $text-color;
+        border-radius: 5rem;
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .reservation_sec {
+    .book-btn {
+      width: 160px;
+      font-size: 14px;
+    }
+
+    .reservation {
+      .back-btn {
+        position: absolute;
+        top: 30px;
+      }
+    }
+  }
+}

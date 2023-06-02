@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: #ecf0f1;
+}
+
+button {
+  width: 70px;
+  height: 60px;
+  background-color: rgb(151, 191, 15);
+  border: none;
+  color: #fff;
+  font-size: medium;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  top: 10%;
+  left: 0;
+  cursor: pointer;
+  outline: 0;
+  transition: all 0.25s ease;
+  z-index: 1000;
+  position: fixed;
+}
+
+button:hover {
+  opacity: 0.8;
+  transition: all 0.25s ease;
+}
+
+button::after {
+  left: 200px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  height: 100vh;
+  width: 200px;
+
+  /* opacity: 0; */
+
+  /* position: fixed; */
+
+  /* visibility: hidden; */
+
+  /* transition: all 0.25s ease; */
+
+  /* transform: translateX(-50%); */
+
+  /* opacity: 1; */
+
+  /* visibility: visible; */
+
+  /* transition: all 0.25s ease; */
+
+  /* transform: translateX(0); */
+  position: fixed;
+  z-index: 2;
+}
+
+.menu .logo {
+  text-align: center;
+  padding-top: 5vh;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+  color: #000;
+  transform: rotate(-0.02turn);
+  text-decoration: underline;
+}
+
+.menu a {
+  color: rgb(57, 57, 57);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  display: block;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  font-size: 16px;
+  border-bottom: 1px solid #fff;
+  transition: all 0.25s ease;
+  animation: fadeInRight 0.25s ease forwards;
+  opacity: 0;
+  margin-left: 10px;
+}
+
+.menu ul li:hover {
+  opacity: 0.8;
+  transition: all 0.25s ease;
+  background: rgb(151, 191, 15);
+  cursor: pointer;
+}
+
+.menu ul li a:hover {
+  color: #fff;
+}
+
+small {
+  font-size: 0.7em;
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+
+.footer {
+  padding-bottom: 35px;
+}
+
+/* .active {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.25s ease;
+  transform: translateX(0);
+  position: fixed;
+  z-index: 2;
+} */
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 30px;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}

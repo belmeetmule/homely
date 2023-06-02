@@ -1,0 +1,151 @@
+@import './../scss/config';
+
+.details-sec {
+  margin-left: 200px;
+
+  .back-btn {
+    top: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: auto;
+  }
+}
+
+.detail-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  // width: 100%;
+}
+
+.image {
+  height: 80vh;
+  margin: 30px 0;
+  margin-left: 200px;
+  // background-color: $background-color;
+
+  img {
+    width: 550px;
+    // aspect-ratio: 16/ 9;
+    height: 100%;
+  }
+}
+
+.details {
+  width: 20%;
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 30px;
+
+  .name {
+    font-size: 1rem;
+    margin: 1rem 3px 0;
+  }
+
+  .email {
+    font-size: 1rem;
+    margin: 1rem 3px;
+  }
+
+  .reserve-btn {
+    position: relative;
+    // top: 70%;
+    // left: 85%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+  }
+}
+
+.ulIcon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  ul {
+    width: 100%;
+    padding: 0;
+  }
+
+  .first {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    margin: 0;
+    text-align: initial;
+
+    &:nth-child(odd) {
+      background-color: $lighter-bg;
+    }
+  }
+
+  .iconColor {
+    width: 100%;
+    text-align: right;
+
+    h4 {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 8px;
+      font-weight: 800;
+    }
+
+    img {
+      width: 80px;
+      height: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .details-sec {
+    margin-left: 120px;
+
+    .detail-container {
+      flex-direction: column;
+      padding: 20px;
+
+      .image {
+        margin: 30px 2px;
+        height: 30vh;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .details {
+        width: 100%;
+        padding: 0;
+
+        .first {
+          height: 30px;
+          align-items: center;
+        }
+
+        .reserve-btn {
+          font-size: 0.8rem;
+          width: 130px;
+          height: 35px;
+        }
+      }
+    }
+
+    .back-btn {
+      font-size: 0.8rem;
+      width: 50px;
+      height: 35px;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import './../scss/config';
+
+.house-cont {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  justify-content: center;
+
+  .list-cont {
+    padding-top: 60px;
+  }
+
+  .stripped-table {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    width: 60%;
+    margin: auto;
+  }
+
+  tr {
+    gap: 30px;
+    height: 40px;
+  }
+
+  table tr:nth-child(even) {
+    background-color: #d0e9d8;
+  }
+
+  td {
+    display: flex;
+    padding: 8px;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 5px;
+  }
+
+  .delete {
+    background-color: #f40909;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    color: #fff;
+    margin-left: 30px;
+  }
+
+  .back-btn {
+    top: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+h2 {
+  color: $primary-color;
+  font-weight: 800;
+  // margin-top: 1rem;
+  margin: 0;
+  padding-top: 120px;
+}
+
+h5 {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 1rem 0;
+
+  a {
+    color: $primary-color;
+  }
+}

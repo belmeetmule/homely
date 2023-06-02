@@ -1,0 +1,92 @@
+@import './../scss/config';
+
+.add_house_sec {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem auto 0.5rem;
+    padding: 0;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    h4 {
+      color: $primary-color;
+      margin: 0.1rem auto 1rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 480px;
+      margin: 10px auto;
+      padding: 0 1rem;
+
+      @extend %btn-properties;
+
+      border: $border;
+      position: relative;
+
+      .icon {
+        position: absolute;
+        left: 1.2rem;
+        display: inline;
+        color: $secondary-color;
+      }
+
+      input,
+      textarea {
+        width: 70%;
+        height: 12%;
+        padding: 0.5rem 1rem;
+        margin-left: 3rem;
+        background-color: inherit;
+        color: $secondary-color;
+
+        &:hover {
+          background-color: inherit;
+          background-color: $secondary-color;
+          color: $text-color;
+        }
+      }
+      // stylelint-disable-next-line no-descending-specificity
+      textarea {
+        border: none;
+        height: 120px;
+        width: 100%;
+      }
+
+      &:focus {
+        cursor: pointer;
+        background-color: inherit;
+      }
+    }
+
+    button {
+      @extend %btn-color;
+    }
+
+    .add-btn {
+      position: inherit;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      width: 100px;
+    }
+  }
+}

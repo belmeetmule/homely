@@ -1,0 +1,77 @@
+$text-color: #fafafa;
+$primary-color: #121212;
+$secondary-color: rgba(141, 197, 10, 0.788);
+$sous-title: rgba(95, 93, 93, 0.541);
+$background-color: rgba(226, 217, 217, 0.945);
+$lighter-bg : rgb(95 93 93 / 32%);
+$font-stack: 'Montserrat', sans-serif;
+$font: 'Caveat', cursive, serif;
+$border-size: 4px solid $primary-color;
+$border: 3px solid $text-color;
+$box-shadow : 10px 8px 16px rgba(79, 156, 192, 0.384);
+
+// @mixin d-flex($position) {
+//   display: flex;
+//   align-items: center;
+//   justify-content: $position;
+// }
+
+%main-properties {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1rem 3rem;
+  font-family: $font-stack;
+}
+
+%boder-properties {
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  border: var(--border-size);
+  border-radius: 4px;
+}
+
+%btn-properties {
+  border: none;
+  outline: none;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 42px;
+  border-radius: 20px;
+}
+
+%btn-color {
+  color: $text-color;
+  background-color: $secondary-color;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  transition: all 0.5s ease;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+h6 {
+  width: 100%;
+  height: 100%;
+
+  // @include d-flex(center);
+
+  color: $secondary-color;
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, serif;
+}
